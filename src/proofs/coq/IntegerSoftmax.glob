@@ -1,0 +1,225 @@
+DIGEST 675d53c3daa0170237168f0ce910d590
+FIntegerSoftmax
+R181:185 Coq.Arith.Arith <> <> lib
+R203:205 Coq.micromega.Lia <> <> lib
+R223:225 Coq.Init.Nat <> <> lib
+R243:246 Coq.Lists.List <> <> lib
+R256:268 Coq.Lists.List ListNotations <> mod
+def 760:771 <> scale_factor
+R775:777 Coq.Init.Datatypes <> nat ind
+rec 809:818 <> IntSoftmax
+proj 827:834 <> is_probs
+proj 850:857 <> is_scale
+R838:841 Coq.Init.Datatypes <> list ind
+R843:845 Coq.Init.Datatypes <> nat ind
+R861:863 Coq.Init.Datatypes <> nat ind
+def 881:889 <> sum_probs
+R900:903 Coq.Init.Datatypes <> list ind
+R905:907 Coq.Init.Datatypes <> nat ind
+binder 892:896 <> probs:4
+R912:914 Coq.Init.Datatypes <> nat ind
+R921:929 Coq.Lists.List <> fold_left def
+R939:943 IntegerSoftmax <> probs:4 var
+R931:937 Coq.Arith.PeanoNat Nat add def
+def 960:968 <> exact_sum
+R976:985 IntegerSoftmax <> IntSoftmax rec
+binder 971:972 <> is:5
+R1023:1025 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1000:1008 IntegerSoftmax <> sum_probs def
+R1014:1021 IntegerSoftmax <> is_probs proj
+R1010:1011 IntegerSoftmax <> is:5 var
+R1030:1037 IntegerSoftmax <> is_scale proj
+R1026:1027 IntegerSoftmax <> is:5 var
+def 1215:1234 <> distribute_remainder
+R1245:1248 Coq.Init.Datatypes <> list ind
+R1250:1252 Coq.Init.Datatypes <> nat ind
+binder 1237:1241 <> probs:6
+R1265:1267 Coq.Init.Datatypes <> nat ind
+binder 1256:1261 <> target:7
+R1272:1275 Coq.Init.Datatypes <> list ind
+R1277:1279 Coq.Init.Datatypes <> nat ind
+R1301:1309 IntegerSoftmax <> sum_probs def
+R1311:1315 IntegerSoftmax <> probs:6 var
+binder 1290:1296 <> current:8
+R1343:1345 Coq.Init.Nat <> ::nat_scope:x_'-'_x not
+R1337:1342 IntegerSoftmax <> target:7 var
+R1346:1352 IntegerSoftmax <> current:8 var
+binder 1326:1332 <> deficit:9
+binder 1417:1417 <> l:10
+binder 1419:1419 <> d:11
+R1437:1437 IntegerSoftmax <> d:11 var
+R1434:1434 IntegerSoftmax <> l:10 var
+R1450:1451 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1459:1460 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1469:1472 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1482:1485 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1495:1498 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1502:1502 Coq.Init.Datatypes <> S constr
+R1510:1510 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1516:1520 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1512:1514 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R1521:1527 IntegerSoftmax <> add_one:12 var
+binder 1409:1415 <> add_one:15
+R1547:1553 IntegerSoftmax <> add_one:15 var
+R1561:1567 IntegerSoftmax <> deficit:9 var
+R1555:1559 IntegerSoftmax <> probs:6 var
+prf 1577:1589 <> fold_add_cons
+binder 1600:1600 <> h:16
+binder 1602:1602 <> t:17
+binder 1604:1606 <> acc:18
+R1641:1643 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1611:1619 Coq.Lists.List <> fold_left def
+R1638:1640 IntegerSoftmax <> acc:18 var
+R1631:1634 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1630:1630 IntegerSoftmax <> h:16 var
+R1635:1635 IntegerSoftmax <> t:17 var
+R1621:1627 Coq.Arith.PeanoNat Nat add def
+R1644:1652 Coq.Lists.List <> fold_left def
+R1668:1670 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R1665:1667 IntegerSoftmax <> acc:18 var
+R1671:1671 IntegerSoftmax <> h:16 var
+R1662:1662 IntegerSoftmax <> t:17 var
+R1654:1660 Coq.Arith.PeanoNat Nat add def
+prf 1724:1737 <> sum_probs_cons
+binder 1748:1748 <> h:19
+binder 1750:1750 <> t:20
+R1773:1775 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1755:1763 IntegerSoftmax <> sum_probs def
+R1767:1770 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1766:1766 IntegerSoftmax <> h:19 var
+R1771:1771 IntegerSoftmax <> t:20 var
+R1777:1779 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R1776:1776 IntegerSoftmax <> h:19 var
+R1780:1788 IntegerSoftmax <> sum_probs def
+R1790:1790 IntegerSoftmax <> t:20 var
+R1823:1831 IntegerSoftmax <> sum_probs def
+prf 1934:1959 <> distribute_maintains_bound
+R1978:1981 Coq.Init.Datatypes <> list ind
+R1983:1985 Coq.Init.Datatypes <> nat ind
+binder 1970:1974 <> probs:21
+R2004:2006 Coq.Init.Datatypes <> nat ind
+binder 1995:2000 <> target:22
+R2036:2041 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2026:2029 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R2011:2019 IntegerSoftmax <> sum_probs def
+R2021:2025 IntegerSoftmax <> probs:21 var
+R2030:2035 IntegerSoftmax <> target:22 var
+R2082:2087 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2066:2069 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R2048:2050 Coq.Init.Nat <> ::nat_scope:x_'-'_x not
+R2042:2047 IntegerSoftmax <> target:22 var
+R2051:2059 IntegerSoftmax <> sum_probs def
+R2061:2065 IntegerSoftmax <> probs:21 var
+R2070:2075 Coq.Init.Datatypes <> length def
+R2077:2081 IntegerSoftmax <> probs:21 var
+R2133:2135 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2088:2096 IntegerSoftmax <> sum_probs def
+R2099:2118 IntegerSoftmax <> distribute_remainder def
+R2120:2124 IntegerSoftmax <> probs:21 var
+R2126:2131 IntegerSoftmax <> target:22 var
+R2136:2141 IntegerSoftmax <> target:22 var
+def 2253:2258 <> argmax
+R2269:2272 Coq.Init.Datatypes <> list ind
+R2274:2276 Coq.Init.Datatypes <> nat ind
+binder 2261:2265 <> probs:23
+R2281:2283 Coq.Init.Datatypes <> nat ind
+binder 2307:2307 <> l:24
+binder 2309:2311 <> idx:25
+binder 2313:2320 <> best_idx:26
+binder 2322:2329 <> best_val:27
+R2344:2344 IntegerSoftmax <> l:24 var
+R2357:2358 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R2363:2370 IntegerSoftmax <> best_idx:26 var
+R2379:2382 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2397:2403 Coq.Arith.PeanoNat Nat ltb def
+R2405:2412 IntegerSoftmax <> best_val:27 var
+R2463:2470 IntegerSoftmax <> find_max:28 var
+R2491:2498 IntegerSoftmax <> best_val:27 var
+R2482:2489 IntegerSoftmax <> best_idx:26 var
+R2475:2475 Coq.Init.Datatypes <> S constr
+R2477:2479 IntegerSoftmax <> idx:25 var
+R2427:2434 IntegerSoftmax <> find_max:28 var
+R2446:2448 IntegerSoftmax <> idx:25 var
+R2439:2439 Coq.Init.Datatypes <> S constr
+R2441:2443 IntegerSoftmax <> idx:25 var
+binder 2298:2305 <> find_max:30
+R2513:2520 IntegerSoftmax <> find_max:30 var
+R2522:2526 IntegerSoftmax <> probs:23 var
+prf 2544:2559 <> argmax_invariant
+R2578:2581 Coq.Init.Datatypes <> list ind
+R2583:2585 Coq.Init.Datatypes <> nat ind
+binder 2570:2574 <> probs:31
+R2604:2606 Coq.Init.Datatypes <> nat ind
+binder 2595:2600 <> target:32
+R2636:2641 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2626:2629 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R2611:2619 IntegerSoftmax <> sum_probs def
+R2621:2625 IntegerSoftmax <> probs:31 var
+R2630:2635 IntegerSoftmax <> target:32 var
+R2682:2773 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2666:2669 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R2648:2650 Coq.Init.Nat <> ::nat_scope:x_'-'_x not
+R2642:2647 IntegerSoftmax <> target:32 var
+R2651:2659 IntegerSoftmax <> sum_probs def
+R2661:2665 IntegerSoftmax <> probs:31 var
+R2670:2675 Coq.Init.Datatypes <> length def
+R2677:2681 IntegerSoftmax <> probs:31 var
+R2774:2777 Coq.Init.Logic <> True ind
+def 2856:2876 <> max_entropy_numerator
+R2883:2885 Coq.Init.Datatypes <> nat ind
+binder 2879:2879 <> n:33
+R2890:2892 Coq.Init.Datatypes <> nat ind
+R2897:2897 IntegerSoftmax <> n:33 var
+def 2942:2964 <> max_entropy_denominator
+R2971:2973 Coq.Init.Datatypes <> nat ind
+binder 2967:2967 <> n:34
+R2978:2980 Coq.Init.Datatypes <> nat ind
+R2985:2985 IntegerSoftmax <> n:34 var
+prf 2997:3011 <> entropy_bounded
+R3027:3036 IntegerSoftmax <> IntSoftmax rec
+binder 3022:3023 <> is:35
+R3065:3070 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3061:3063 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R3041:3046 Coq.Init.Datatypes <> length def
+R3052:3059 IntegerSoftmax <> is_probs proj
+R3048:3049 IntegerSoftmax <> is:35 var
+R3083:3125 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3071:3079 IntegerSoftmax <> exact_sum def
+R3081:3082 IntegerSoftmax <> is:35 var
+R3126:3129 Coq.Init.Logic <> True ind
+def 3418:3434 <> float_error_bound
+R3438:3440 Coq.Init.Datatypes <> nat ind
+def 3491:3503 <> integer_error
+R3507:3509 Coq.Init.Datatypes <> nat ind
+prf 3526:3538 <> integer_exact
+R3555:3557 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3542:3554 IntegerSoftmax <> integer_error def
+prf 3595:3608 <> integer_better
+R3625:3627 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R3612:3624 IntegerSoftmax <> integer_error def
+R3628:3644 IntegerSoftmax <> float_error_bound def
+R3663:3675 IntegerSoftmax <> integer_error def
+R3678:3694 IntegerSoftmax <> float_error_bound def
+def 4021:4029 <> is_stable
+R4037:4046 IntegerSoftmax <> IntSoftmax rec
+binder 4032:4033 <> is:36
+binder 4068:4068 <> p:37
+R4089:4092 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4071:4072 Coq.Lists.List <> In def
+R4080:4087 IntegerSoftmax <> is_probs proj
+R4076:4077 IntegerSoftmax <> is:36 var
+R4074:4074 IntegerSoftmax <> p:37 var
+R4094:4097 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R4093:4093 IntegerSoftmax <> p:37 var
+R4102:4109 IntegerSoftmax <> is_scale proj
+R4098:4099 IntegerSoftmax <> is:36 var
+prf 4122:4145 <> stability_from_exactness
+R4161:4170 IntegerSoftmax <> IntSoftmax rec
+binder 4156:4157 <> is:38
+R4187:4190 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4175:4183 IntegerSoftmax <> exact_sum def
+R4185:4186 IntegerSoftmax <> is:38 var
+R4191:4199 IntegerSoftmax <> is_stable def
+R4201:4202 IntegerSoftmax <> is:38 var
+R4241:4249 IntegerSoftmax <> is_stable def
+R4277:4285 IntegerSoftmax <> exact_sum def

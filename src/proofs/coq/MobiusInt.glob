@@ -1,0 +1,240 @@
+DIGEST fe4be8c77833a592f694d41a2f536282
+FMobiusInt
+R190:194 Coq.Arith.Arith <> <> lib
+R212:214 Coq.micromega.Lia <> <> lib
+R232:234 Coq.Init.Nat <> <> lib
+rec 668:683 <> SymmetricResidue
+proj 692:699 <> sr_value
+proj 710:719 <> sr_modulus
+R703:705 Coq.Init.Datatypes <> nat ind
+R723:725 Coq.Init.Datatypes <> nat ind
+def 743:754 <> half_modulus
+R761:763 Coq.Init.Datatypes <> nat ind
+binder 757:757 <> m:4
+R768:770 Coq.Init.Datatypes <> nat ind
+R776:778 Coq.Init.Nat <> ::nat_scope:x_'/'_x not
+R775:775 MobiusInt <> m:4 var
+def 794:804 <> is_negative
+R812:827 MobiusInt <> SymmetricResidue rec
+binder 807:808 <> sr:5
+R832:835 Coq.Init.Datatypes <> bool ind
+R842:848 Coq.Arith.PeanoNat Nat ltb def
+R851:862 MobiusInt <> half_modulus def
+R868:877 MobiusInt <> sr_modulus proj
+R864:865 MobiusInt <> sr:5 var
+R885:892 MobiusInt <> sr_value proj
+R881:882 MobiusInt <> sr:5 var
+def 908:926 <> to_signed_magnitude
+R934:949 MobiusInt <> SymmetricResidue rec
+binder 929:930 <> sr:6
+R954:956 Coq.Init.Datatypes <> nat ind
+R966:976 MobiusInt <> is_negative def
+R978:979 MobiusInt <> sr:6 var
+R1031:1038 MobiusInt <> sr_value proj
+R1027:1028 MobiusInt <> sr:6 var
+R1003:1005 Coq.Init.Nat <> ::nat_scope:x_'-'_x not
+R992:1001 MobiusInt <> sr_modulus proj
+R988:989 MobiusInt <> sr:6 var
+R1010:1017 MobiusInt <> sr_value proj
+R1006:1007 MobiusInt <> sr:6 var
+prf 1051:1067 <> magnitude_bounded
+R1083:1098 MobiusInt <> SymmetricResidue rec
+binder 1078:1079 <> sr:7
+R1122:1127 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1118:1120 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R1107:1116 MobiusInt <> sr_modulus proj
+R1103:1104 MobiusInt <> sr:7 var
+R1159:1164 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1141:1143 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1132:1139 MobiusInt <> sr_value proj
+R1128:1129 MobiusInt <> sr:7 var
+R1148:1157 MobiusInt <> sr_modulus proj
+R1144:1145 MobiusInt <> sr:7 var
+R1187:1190 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R1165:1183 MobiusInt <> to_signed_magnitude def
+R1185:1186 MobiusInt <> sr:7 var
+R1191:1202 MobiusInt <> half_modulus def
+R1208:1217 MobiusInt <> sr_modulus proj
+R1204:1205 MobiusInt <> sr:7 var
+def 1389:1394 <> sr_add
+R1403:1418 MobiusInt <> SymmetricResidue rec
+binder 1397:1397 <> a:8
+binder 1399:1399 <> b:9
+R1423:1438 MobiusInt <> SymmetricResidue rec
+R1448:1455 MobiusInt <> sr_value proj
+R1448:1455 MobiusInt <> sr_value proj
+R1448:1455 MobiusInt <> sr_value proj
+R1515:1524 MobiusInt <> sr_modulus proj
+R1515:1524 MobiusInt <> sr_modulus proj
+R1460:1460 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R1488:1493 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R1473:1475 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R1464:1471 MobiusInt <> sr_value proj
+R1461:1461 MobiusInt <> a:8 var
+R1479:1486 MobiusInt <> sr_value proj
+R1476:1476 MobiusInt <> b:9 var
+R1497:1506 MobiusInt <> sr_modulus proj
+R1494:1494 MobiusInt <> a:8 var
+R1532:1541 MobiusInt <> sr_modulus proj
+R1529:1529 MobiusInt <> a:8 var
+def 1560:1565 <> sr_neg
+R1572:1587 MobiusInt <> SymmetricResidue rec
+binder 1568:1568 <> a:10
+R1592:1607 MobiusInt <> SymmetricResidue rec
+R1617:1624 MobiusInt <> sr_value proj
+R1617:1624 MobiusInt <> sr_value proj
+R1617:1624 MobiusInt <> sr_value proj
+R1686:1695 MobiusInt <> sr_modulus proj
+R1686:1695 MobiusInt <> sr_modulus proj
+R1629:1629 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R1659:1664 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R1644:1646 Coq.Init.Nat <> ::nat_scope:x_'-'_x not
+R1633:1642 MobiusInt <> sr_modulus proj
+R1630:1630 MobiusInt <> a:10 var
+R1650:1657 MobiusInt <> sr_value proj
+R1647:1647 MobiusInt <> a:10 var
+R1668:1677 MobiusInt <> sr_modulus proj
+R1665:1665 MobiusInt <> a:10 var
+R1703:1712 MobiusInt <> sr_modulus proj
+R1700:1700 MobiusInt <> a:10 var
+prf 1728:1741 <> neg_involutive
+R1756:1771 MobiusInt <> SymmetricResidue rec
+binder 1752:1752 <> a:11
+R1794:1799 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1790:1792 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R1779:1788 MobiusInt <> sr_modulus proj
+R1776:1776 MobiusInt <> a:11 var
+R1829:1834 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1812:1814 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1803:1810 MobiusInt <> sr_value proj
+R1800:1800 MobiusInt <> a:11 var
+R1818:1827 MobiusInt <> sr_modulus proj
+R1815:1815 MobiusInt <> a:11 var
+R1851:1856 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1847:1849 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R1838:1845 MobiusInt <> sr_value proj
+R1835:1835 MobiusInt <> a:11 var
+R1887:1889 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1878:1885 MobiusInt <> sr_value proj
+R1858:1863 MobiusInt <> sr_neg def
+R1866:1871 MobiusInt <> sr_neg def
+R1873:1873 MobiusInt <> a:11 var
+R1893:1900 MobiusInt <> sr_value proj
+R1890:1890 MobiusInt <> a:11 var
+def 2127:2134 <> sign_bit
+R2142:2157 MobiusInt <> SymmetricResidue rec
+binder 2137:2138 <> sr:12
+R2162:2164 Coq.Init.Datatypes <> nat ind
+R2174:2184 MobiusInt <> is_negative def
+R2186:2187 MobiusInt <> sr:12 var
+prf 2213:2236 <> sign_consistent_with_neg
+R2251:2266 MobiusInt <> SymmetricResidue rec
+binder 2247:2247 <> a:13
+R2289:2294 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2285:2287 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R2274:2283 MobiusInt <> sr_modulus proj
+R2271:2271 MobiusInt <> a:13 var
+R2311:2316 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2307:2309 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R2298:2305 MobiusInt <> sr_value proj
+R2295:2295 MobiusInt <> a:13 var
+R2346:2351 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2329:2331 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R2320:2327 MobiusInt <> sr_value proj
+R2317:2317 MobiusInt <> a:13 var
+R2335:2344 MobiusInt <> sr_modulus proj
+R2332:2332 MobiusInt <> a:13 var
+R2371:2373 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2352:2359 MobiusInt <> sign_bit def
+R2362:2367 MobiusInt <> sr_neg def
+R2369:2369 MobiusInt <> a:13 var
+R2375:2377 Coq.Init.Nat <> ::nat_scope:x_'-'_x not
+R2378:2385 MobiusInt <> sign_bit def
+R2387:2387 MobiusInt <> a:13 var
+def 2492:2497 <> sr_mul
+R2506:2521 MobiusInt <> SymmetricResidue rec
+binder 2500:2500 <> a:14
+binder 2502:2502 <> b:15
+R2526:2541 MobiusInt <> SymmetricResidue rec
+R2551:2558 MobiusInt <> sr_value proj
+R2551:2558 MobiusInt <> sr_value proj
+R2551:2558 MobiusInt <> sr_value proj
+R2618:2627 MobiusInt <> sr_modulus proj
+R2618:2627 MobiusInt <> sr_modulus proj
+R2563:2563 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R2591:2596 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R2576:2578 Coq.Init.Nat <> ::nat_scope:x_'*'_x not
+R2567:2574 MobiusInt <> sr_value proj
+R2564:2564 MobiusInt <> a:14 var
+R2582:2589 MobiusInt <> sr_value proj
+R2579:2579 MobiusInt <> b:15 var
+R2600:2609 MobiusInt <> sr_modulus proj
+R2597:2597 MobiusInt <> a:14 var
+R2635:2644 MobiusInt <> sr_modulus proj
+R2632:2632 MobiusInt <> a:14 var
+prf 2660:2672 <> mul_sign_rule
+R2689:2704 MobiusInt <> SymmetricResidue rec
+binder 2683:2683 <> a:16
+binder 2685:2685 <> b:17
+R2740:2745 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2723:2725 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2712:2721 MobiusInt <> sr_modulus proj
+R2709:2709 MobiusInt <> a:16 var
+R2729:2738 MobiusInt <> sr_modulus proj
+R2726:2726 MobiusInt <> b:17 var
+R2764:2814 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2760:2762 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R2749:2758 MobiusInt <> sr_modulus proj
+R2746:2746 MobiusInt <> a:16 var
+R2815:2818 Coq.Init.Logic <> True ind
+def 2911:2923 <> near_boundary
+R2931:2946 MobiusInt <> SymmetricResidue rec
+binder 2926:2927 <> sr:18
+R2959:2961 Coq.Init.Datatypes <> nat ind
+binder 2950:2955 <> margin:19
+R2966:2969 Coq.Init.Datatypes <> bool ind
+R2985:2996 MobiusInt <> half_modulus def
+R3002:3011 MobiusInt <> sr_modulus proj
+R2998:2999 MobiusInt <> sr:18 var
+binder 2980:2980 <> h:20
+R3031:3049 MobiusInt <> to_signed_magnitude def
+R3051:3052 MobiusInt <> sr:18 var
+binder 3023:3026 <> dist:21
+R3059:3065 Coq.Arith.PeanoNat Nat ltb def
+R3067:3067 MobiusInt <> h:20 var
+R3074:3076 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R3070:3073 MobiusInt <> dist:21 var
+R3077:3082 MobiusInt <> margin:19 var
+prf 3095:3120 <> boundary_detection_correct
+R3143:3145 Coq.Init.Datatypes <> nat ind
+binder 3131:3132 <> sr:22
+binder 3134:3139 <> margin:23
+R3164:3179 MobiusInt <> SymmetricResidue rec
+binder 3157:3160 <> srec:24
+R3205:3210 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3201:3203 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R3190:3199 MobiusInt <> sr_modulus proj
+R3184:3187 MobiusInt <> srec:24 var
+R3246:3251 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3226:3228 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R3217:3224 MobiusInt <> sr_value proj
+R3211:3214 MobiusInt <> srec:24 var
+R3235:3244 MobiusInt <> sr_modulus proj
+R3229:3232 MobiusInt <> srec:24 var
+R3284:3289 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3277:3279 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3252:3264 MobiusInt <> near_boundary def
+R3266:3269 MobiusInt <> srec:24 var
+R3271:3276 MobiusInt <> margin:23 var
+R3280:3283 Coq.Init.Datatypes <> true constr
+R3323:3325 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R3314:3316 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R3290:3308 MobiusInt <> to_signed_magnitude def
+R3310:3313 MobiusInt <> srec:24 var
+R3317:3322 MobiusInt <> margin:23 var
+R3326:3337 MobiusInt <> half_modulus def
+R3345:3354 MobiusInt <> sr_modulus proj
+R3339:3342 MobiusInt <> srec:24 var
+R3411:3423 MobiusInt <> near_boundary def
+R3443:3452 Coq.Arith.PeanoNat Nat ltb_lt thm
+R3443:3452 Coq.Arith.PeanoNat Nat ltb_lt thm

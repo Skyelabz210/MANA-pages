@@ -1,0 +1,261 @@
+DIGEST cfa02c20bcdc40ffaa28e77c460560fe
+FExactCoefficient
+R163:167 Coq.Arith.Arith <> <> lib
+R185:187 Coq.micromega.Lia <> <> lib
+R205:207 Coq.Init.Nat <> <> lib
+rec 543:551 <> DualCoeff
+proj 560:565 <> dc_rns
+proj 600:607 <> dc_exact
+proj 648:657 <> dc_modulus
+R569:571 Coq.Init.Datatypes <> nat ind
+R611:613 Coq.Init.Datatypes <> nat ind
+R661:663 Coq.Init.Datatypes <> nat ind
+def 763:776 <> dual_invariant
+R783:791 ExactCoefficient <> DualCoeff rec
+binder 779:779 <> c:5
+R816:818 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R809:814 ExactCoefficient <> dc_rns proj
+R806:806 ExactCoefficient <> c:5 var
+R831:835 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R822:829 ExactCoefficient <> dc_exact proj
+R819:819 ExactCoefficient <> c:5 var
+R839:848 ExactCoefficient <> dc_modulus proj
+R836:836 ExactCoefficient <> c:5 var
+def 921:928 <> dual_add
+R937:945 ExactCoefficient <> DualCoeff rec
+binder 931:931 <> a:6
+binder 933:933 <> b:7
+R950:958 ExactCoefficient <> DualCoeff rec
+R968:973 ExactCoefficient <> dc_rns proj
+R968:973 ExactCoefficient <> dc_rns proj
+R968:973 ExactCoefficient <> dc_rns proj
+R1029:1036 ExactCoefficient <> dc_exact proj
+R1029:1036 ExactCoefficient <> dc_exact proj
+R1075:1084 ExactCoefficient <> dc_modulus proj
+R1075:1084 ExactCoefficient <> dc_modulus proj
+R978:978 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R1002:1007 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R989:991 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R982:987 ExactCoefficient <> dc_rns proj
+R979:979 ExactCoefficient <> a:6 var
+R995:1000 ExactCoefficient <> dc_rns proj
+R992:992 ExactCoefficient <> b:7 var
+R1011:1020 ExactCoefficient <> dc_modulus proj
+R1008:1008 ExactCoefficient <> a:6 var
+R1053:1055 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R1044:1051 ExactCoefficient <> dc_exact proj
+R1041:1041 ExactCoefficient <> a:6 var
+R1059:1066 ExactCoefficient <> dc_exact proj
+R1056:1056 ExactCoefficient <> b:7 var
+R1092:1101 ExactCoefficient <> dc_modulus proj
+R1089:1089 ExactCoefficient <> a:6 var
+prf 1117:1139 <> add_preserves_invariant
+R1156:1164 ExactCoefficient <> DualCoeff rec
+binder 1150:1150 <> a:8
+binder 1152:1152 <> b:9
+R1185:1188 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1169:1182 ExactCoefficient <> dual_invariant def
+R1184:1184 ExactCoefficient <> a:8 var
+R1205:1210 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1189:1202 ExactCoefficient <> dual_invariant def
+R1204:1204 ExactCoefficient <> b:9 var
+R1242:1247 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1225:1227 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1214:1223 ExactCoefficient <> dc_modulus proj
+R1211:1211 ExactCoefficient <> a:8 var
+R1231:1240 ExactCoefficient <> dc_modulus proj
+R1228:1228 ExactCoefficient <> b:9 var
+R1266:1271 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1262:1264 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R1251:1260 ExactCoefficient <> dc_modulus proj
+R1248:1248 ExactCoefficient <> a:8 var
+R1272:1285 ExactCoefficient <> dual_invariant def
+R1288:1295 ExactCoefficient <> dual_add def
+R1297:1297 ExactCoefficient <> a:8 var
+R1299:1299 ExactCoefficient <> b:9 var
+def 1424:1431 <> dual_mul
+R1440:1448 ExactCoefficient <> DualCoeff rec
+binder 1434:1434 <> a:10
+binder 1436:1436 <> b:11
+R1453:1461 ExactCoefficient <> DualCoeff rec
+R1471:1476 ExactCoefficient <> dc_rns proj
+R1471:1476 ExactCoefficient <> dc_rns proj
+R1471:1476 ExactCoefficient <> dc_rns proj
+R1532:1539 ExactCoefficient <> dc_exact proj
+R1532:1539 ExactCoefficient <> dc_exact proj
+R1578:1587 ExactCoefficient <> dc_modulus proj
+R1578:1587 ExactCoefficient <> dc_modulus proj
+R1481:1481 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R1505:1510 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R1492:1494 Coq.Init.Nat <> ::nat_scope:x_'*'_x not
+R1485:1490 ExactCoefficient <> dc_rns proj
+R1482:1482 ExactCoefficient <> a:10 var
+R1498:1503 ExactCoefficient <> dc_rns proj
+R1495:1495 ExactCoefficient <> b:11 var
+R1514:1523 ExactCoefficient <> dc_modulus proj
+R1511:1511 ExactCoefficient <> a:10 var
+R1556:1558 Coq.Init.Nat <> ::nat_scope:x_'*'_x not
+R1547:1554 ExactCoefficient <> dc_exact proj
+R1544:1544 ExactCoefficient <> a:10 var
+R1562:1569 ExactCoefficient <> dc_exact proj
+R1559:1559 ExactCoefficient <> b:11 var
+R1595:1604 ExactCoefficient <> dc_modulus proj
+R1592:1592 ExactCoefficient <> a:10 var
+prf 1620:1642 <> mul_preserves_invariant
+R1659:1667 ExactCoefficient <> DualCoeff rec
+binder 1653:1653 <> a:12
+binder 1655:1655 <> b:13
+R1688:1691 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1672:1685 ExactCoefficient <> dual_invariant def
+R1687:1687 ExactCoefficient <> a:12 var
+R1708:1713 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1692:1705 ExactCoefficient <> dual_invariant def
+R1707:1707 ExactCoefficient <> b:13 var
+R1745:1750 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1728:1730 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1717:1726 ExactCoefficient <> dc_modulus proj
+R1714:1714 ExactCoefficient <> a:12 var
+R1734:1743 ExactCoefficient <> dc_modulus proj
+R1731:1731 ExactCoefficient <> b:13 var
+R1769:1774 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1765:1767 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R1754:1763 ExactCoefficient <> dc_modulus proj
+R1751:1751 ExactCoefficient <> a:12 var
+R1775:1788 ExactCoefficient <> dual_invariant def
+R1791:1798 ExactCoefficient <> dual_mul def
+R1800:1800 ExactCoefficient <> a:12 var
+R1802:1802 ExactCoefficient <> b:13 var
+def 2059:2066 <> dual_div
+R2073:2081 ExactCoefficient <> DualCoeff rec
+binder 2069:2069 <> a:14
+R2089:2091 Coq.Init.Datatypes <> nat ind
+binder 2085:2085 <> d:15
+R2096:2104 ExactCoefficient <> DualCoeff rec
+R2114:2119 ExactCoefficient <> dc_rns proj
+R2114:2119 ExactCoefficient <> dc_rns proj
+R2114:2119 ExactCoefficient <> dc_rns proj
+R2203:2210 ExactCoefficient <> dc_exact proj
+R2203:2210 ExactCoefficient <> dc_exact proj
+R2238:2247 ExactCoefficient <> dc_modulus proj
+R2238:2247 ExactCoefficient <> dc_modulus proj
+R2124:2124 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R2158:2163 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R2135:2138 Coq.Init.Nat <> ::nat_scope:x_'*'_x not
+R2157:2157 Coq.Init.Nat <> ::nat_scope:x_'*'_x not
+R2128:2133 ExactCoefficient <> dc_rns proj
+R2125:2125 ExactCoefficient <> a:14 var
+R2153:2155 Coq.Init.Nat <> ::nat_scope:x_'/'_x not
+R2142:2151 ExactCoefficient <> dc_modulus proj
+R2139:2139 ExactCoefficient <> a:14 var
+R2156:2156 ExactCoefficient <> d:15 var
+R2167:2176 ExactCoefficient <> dc_modulus proj
+R2164:2164 ExactCoefficient <> a:14 var
+R2227:2229 Coq.Init.Nat <> ::nat_scope:x_'/'_x not
+R2218:2225 ExactCoefficient <> dc_exact proj
+R2215:2215 ExactCoefficient <> a:14 var
+R2230:2230 ExactCoefficient <> d:15 var
+R2255:2264 ExactCoefficient <> dc_modulus proj
+R2252:2252 ExactCoefficient <> a:14 var
+prf 2280:2288 <> div_exact
+R2303:2311 ExactCoefficient <> DualCoeff rec
+binder 2299:2299 <> a:16
+R2325:2327 Coq.Init.Datatypes <> nat ind
+binder 2321:2321 <> d:17
+R2337:2340 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2333:2335 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R2332:2332 ExactCoefficient <> d:17 var
+R2366:2371 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2341:2350 Coq.Arith.PeanoNat Nat divide def
+R2352:2352 ExactCoefficient <> d:17 var
+R2357:2364 ExactCoefficient <> dc_exact proj
+R2354:2354 ExactCoefficient <> a:16 var
+R2401:2403 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2397:2399 Coq.Init.Nat <> ::nat_scope:x_'*'_x not
+R2388:2395 ExactCoefficient <> dc_exact proj
+R2373:2380 ExactCoefficient <> dual_div def
+R2382:2382 ExactCoefficient <> a:16 var
+R2384:2384 ExactCoefficient <> d:17 var
+R2400:2400 ExactCoefficient <> d:17 var
+R2407:2414 ExactCoefficient <> dc_exact proj
+R2404:2404 ExactCoefficient <> a:16 var
+R2456:2463 ExactCoefficient <> dual_div def
+R2524:2535 Coq.Arith.PeanoNat Nat mul_comm thm
+R2524:2535 Coq.Arith.PeanoNat Nat mul_comm thm
+R2524:2535 Coq.Arith.PeanoNat Nat mul_comm thm
+R2548:2558 Coq.Arith.PeanoNat Nat div_mul def
+R2548:2558 Coq.Arith.PeanoNat Nat div_mul def
+R2548:2558 Coq.Arith.PeanoNat Nat div_mul def
+R2548:2558 Coq.Arith.PeanoNat Nat div_mul def
+def 2647:2657 <> reconstruct
+R2664:2672 ExactCoefficient <> DualCoeff rec
+binder 2660:2660 <> c:18
+R2677:2679 Coq.Init.Datatypes <> nat ind
+R2687:2694 ExactCoefficient <> dc_exact proj
+R2684:2684 ExactCoefficient <> c:18 var
+prf 2707:2725 <> reconstruct_correct
+R2740:2748 ExactCoefficient <> DualCoeff rec
+binder 2736:2736 <> c:19
+R2769:2774 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2753:2766 ExactCoefficient <> dual_invariant def
+R2768:2768 ExactCoefficient <> c:19 var
+R2807:2809 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2788:2792 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R2775:2785 ExactCoefficient <> reconstruct def
+R2787:2787 ExactCoefficient <> c:19 var
+R2796:2805 ExactCoefficient <> dc_modulus proj
+R2793:2793 ExactCoefficient <> c:19 var
+R2813:2818 ExactCoefficient <> dc_rns proj
+R2810:2810 ExactCoefficient <> c:19 var
+R2853:2863 ExactCoefficient <> reconstruct def
+R2866:2879 ExactCoefficient <> dual_invariant def
+rec 2995:3005 <> RangedCoeff
+proj 3014:3020 <> rc_dual
+proj 3037:3042 <> rc_max
+R3024:3032 ExactCoefficient <> DualCoeff rec
+R3046:3048 Coq.Init.Datatypes <> nat ind
+def 3106:3113 <> in_range
+R3120:3130 ExactCoefficient <> RangedCoeff rec
+binder 3116:3116 <> c:23
+R3167:3170 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R3158:3165 ExactCoefficient <> dc_exact proj
+R3148:3154 ExactCoefficient <> rc_dual proj
+R3145:3145 ExactCoefficient <> c:23 var
+R3174:3179 ExactCoefficient <> rc_max proj
+R3171:3171 ExactCoefficient <> c:23 var
+prf 3192:3200 <> add_range
+R3217:3227 ExactCoefficient <> RangedCoeff rec
+binder 3211:3211 <> a:24
+binder 3213:3213 <> b:25
+R3242:3245 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3232:3239 ExactCoefficient <> in_range def
+R3241:3241 ExactCoefficient <> a:24 var
+R3256:3261 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3246:3253 ExactCoefficient <> in_range def
+R3255:3255 ExactCoefficient <> b:25 var
+R3317:3322 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3288:3290 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3277:3286 ExactCoefficient <> dc_modulus proj
+R3266:3272 ExactCoefficient <> rc_dual proj
+R3263:3263 ExactCoefficient <> a:24 var
+R3306:3315 ExactCoefficient <> dc_modulus proj
+R3295:3301 ExactCoefficient <> rc_dual proj
+R3292:3292 ExactCoefficient <> b:25 var
+R3340:3346 ExactCoefficient <> rc_dual proj
+R3340:3346 ExactCoefficient <> rc_dual proj
+R3340:3346 ExactCoefficient <> rc_dual proj
+R3404:3409 ExactCoefficient <> rc_max proj
+R3404:3409 ExactCoefficient <> rc_max proj
+R3351:3358 ExactCoefficient <> dual_add def
+R3363:3369 ExactCoefficient <> rc_dual proj
+R3360:3360 ExactCoefficient <> a:24 var
+R3375:3381 ExactCoefficient <> rc_dual proj
+R3372:3372 ExactCoefficient <> b:25 var
+R3424:3426 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R3417:3422 ExactCoefficient <> rc_max proj
+R3414:3414 ExactCoefficient <> a:24 var
+R3430:3435 ExactCoefficient <> rc_max proj
+R3427:3427 ExactCoefficient <> b:25 var
+binder 3327:3332 <> result:26
+R3446:3453 ExactCoefficient <> in_range def
+R3455:3460 ExactCoefficient <> result:26 var
+R3504:3511 ExactCoefficient <> in_range def

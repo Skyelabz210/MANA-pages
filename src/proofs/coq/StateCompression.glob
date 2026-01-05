@@ -1,0 +1,200 @@
+DIGEST 19c5bdf7f821c53963edecb7b05b419f
+FStateCompression
+R187:191 Coq.Arith.Arith <> <> lib
+R209:211 Coq.micromega.Lia <> <> lib
+R229:231 Coq.Init.Nat <> <> lib
+rec 558:560 <> Fp2
+proj 569:576 <> fp2_real
+proj 587:594 <> fp2_imag
+proj 605:609 <> fp2_p
+R580:582 Coq.Init.Datatypes <> nat ind
+R598:600 Coq.Init.Datatypes <> nat ind
+R613:615 Coq.Init.Datatypes <> nat ind
+rec 835:847 <> SparseKMarked
+proj 856:865 <> skm_qubits
+proj 876:880 <> skm_k
+proj 891:900 <> skm_marked
+proj 911:922 <> skm_unmarked
+R869:871 Coq.Init.Datatypes <> nat ind
+R884:886 Coq.Init.Datatypes <> nat ind
+R904:906 StateCompression <> Fp2 rec
+R926:928 StateCompression <> Fp2 rec
+def 946:968 <> skm_traditional_storage
+R975:977 Coq.Init.Datatypes <> nat ind
+binder 971:971 <> n:10
+R982:984 Coq.Init.Datatypes <> nat ind
+R992:994 Coq.Init.Nat <> ::nat_scope:x_'*'_x not
+R990:990 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R991:991 StateCompression <> n:10 var
+def 1010:1027 <> skm_sparse_storage
+R1031:1033 Coq.Init.Datatypes <> nat ind
+prf 1075:1089 <> skm_compression
+R1104:1106 Coq.Init.Datatypes <> nat ind
+binder 1100:1100 <> n:11
+R1118:1121 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1112:1115 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R1111:1111 StateCompression <> n:11 var
+R1140:1142 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1122:1139 StateCompression <> skm_sparse_storage def
+R1143:1165 StateCompression <> skm_traditional_storage def
+R1167:1167 StateCompression <> n:11 var
+R1201:1218 StateCompression <> skm_sparse_storage def
+R1221:1243 StateCompression <> skm_traditional_storage def
+R1293:1296 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R1291:1291 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R1298:1298 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R1313:1329 Coq.Arith.PeanoNat Nat pow_le_mono_r thm
+R1293:1296 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R1291:1291 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R1298:1298 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R1313:1329 Coq.Arith.PeanoNat Nat pow_le_mono_r thm
+R1356:1358 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1353:1353 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R1356:1358 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1353:1353 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+rec 1570:1577 <> GHZState
+proj 1586:1595 <> ghz_qubits
+proj 1606:1614 <> ghz_amp_0
+proj 1657:1665 <> ghz_amp_1
+R1599:1601 Coq.Init.Datatypes <> nat ind
+R1618:1620 StateCompression <> Fp2 rec
+R1669:1671 StateCompression <> Fp2 rec
+def 1721:1731 <> ghz_storage
+R1735:1737 Coq.Init.Datatypes <> nat ind
+prf 1755:1769 <> ghz_compression
+R1784:1786 Coq.Init.Datatypes <> nat ind
+binder 1780:1780 <> n:16
+R1797:1800 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1792:1795 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R1791:1791 StateCompression <> n:16 var
+R1812:1814 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R1801:1811 StateCompression <> ghz_storage def
+R1815:1837 StateCompression <> skm_traditional_storage def
+R1839:1839 StateCompression <> n:16 var
+R1873:1883 StateCompression <> ghz_storage def
+R1886:1908 StateCompression <> skm_traditional_storage def
+R1956:1959 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R1954:1954 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R1961:1961 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R1975:1991 Coq.Arith.PeanoNat Nat pow_le_mono_r thm
+R1956:1959 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R1954:1954 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R1961:1961 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R1975:1991 Coq.Arith.PeanoNat Nat pow_le_mono_r thm
+R2017:2019 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2015:2015 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R2017:2019 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2015:2015 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+def 2345:2359 <> product_storage
+R2366:2368 Coq.Init.Datatypes <> nat ind
+binder 2362:2362 <> n:17
+R2373:2375 Coq.Init.Datatypes <> nat ind
+R2381:2383 Coq.Init.Nat <> ::nat_scope:x_'*'_x not
+R2380:2380 StateCompression <> n:17 var
+prf 2421:2439 <> product_compression
+R2454:2456 Coq.Init.Datatypes <> nat ind
+binder 2450:2450 <> n:18
+R2467:2470 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2462:2465 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R2461:2461 StateCompression <> n:18 var
+R2488:2490 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R2471:2485 StateCompression <> product_storage def
+R2487:2487 StateCompression <> n:18 var
+R2491:2513 StateCompression <> skm_traditional_storage def
+R2515:2515 StateCompression <> n:18 var
+R2549:2563 StateCompression <> product_storage def
+R2566:2588 StateCompression <> skm_traditional_storage def
+R2684:2687 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R2682:2682 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R2689:2689 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R2703:2719 Coq.Arith.PeanoNat Nat pow_le_mono_r thm
+R2684:2687 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R2682:2682 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R2689:2689 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R2703:2719 Coq.Arith.PeanoNat Nat pow_le_mono_r thm
+R2745:2747 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2743:2743 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+R2745:2747 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2743:2743 Coq.Init.Nat <> ::nat_scope:x_'^'_x not
+def 3305:3328 <> compression_ratio_sparse
+R3335:3337 Coq.Init.Datatypes <> nat ind
+binder 3331:3331 <> n:19
+R3342:3344 Coq.Init.Datatypes <> nat ind
+R3376:3378 Coq.Init.Nat <> ::nat_scope:x_'/'_x not
+R3351:3373 StateCompression <> skm_traditional_storage def
+R3375:3375 StateCompression <> n:19 var
+R3379:3396 StateCompression <> skm_sparse_storage def
+def 3411:3435 <> compression_ratio_product
+R3442:3444 Coq.Init.Datatypes <> nat ind
+binder 3438:3438 <> n:20
+R3449:3451 Coq.Init.Datatypes <> nat ind
+R3483:3485 Coq.Init.Nat <> ::nat_scope:x_'/'_x not
+R3458:3480 StateCompression <> skm_traditional_storage def
+R3482:3482 StateCompression <> n:20 var
+R3486:3500 StateCompression <> product_storage def
+R3502:3502 StateCompression <> n:20 var
+prf 3514:3534 <> sparse_20_compression
+R3565:3567 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R3538:3561 StateCompression <> compression_ratio_sparse def
+def 3730:3739 <> skm_oracle
+R3746:3758 StateCompression <> SparseKMarked rec
+binder 3742:3742 <> s:21
+R3763:3775 StateCompression <> SparseKMarked rec
+R3785:3794 StateCompression <> skm_qubits proj
+R3785:3794 StateCompression <> skm_qubits proj
+R3785:3794 StateCompression <> skm_qubits proj
+R3820:3824 StateCompression <> skm_k proj
+R3820:3824 StateCompression <> skm_k proj
+R3845:3854 StateCompression <> skm_marked proj
+R3845:3854 StateCompression <> skm_marked proj
+R4133:4144 StateCompression <> skm_unmarked proj
+R4133:4144 StateCompression <> skm_unmarked proj
+R3802:3811 StateCompression <> skm_qubits proj
+R3799:3799 StateCompression <> s:21 var
+R3832:3836 StateCompression <> skm_k proj
+R3829:3829 StateCompression <> s:21 var
+R3862:3869 StateCompression <> fp2_real proj
+R3862:3869 StateCompression <> fp2_real proj
+R3862:3869 StateCompression <> fp2_real proj
+R3977:3984 StateCompression <> fp2_imag proj
+R3977:3984 StateCompression <> fp2_imag proj
+R4092:4096 StateCompression <> fp2_p proj
+R4092:4096 StateCompression <> fp2_p proj
+R3874:3874 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R3925:3930 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R3897:3899 Coq.Init.Nat <> ::nat_scope:x_'-'_x not
+R3891:3895 StateCompression <> fp2_p proj
+R3878:3887 StateCompression <> skm_marked proj
+R3875:3875 StateCompression <> s:21 var
+R3916:3923 StateCompression <> fp2_real proj
+R3903:3912 StateCompression <> skm_marked proj
+R3900:3900 StateCompression <> s:21 var
+R3947:3951 StateCompression <> fp2_p proj
+R3934:3943 StateCompression <> skm_marked proj
+R3931:3931 StateCompression <> s:21 var
+R3989:3989 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R4040:4045 Coq.Init.Nat <> ::nat_scope:x_'mod'_x not
+R4012:4014 Coq.Init.Nat <> ::nat_scope:x_'-'_x not
+R4006:4010 StateCompression <> fp2_p proj
+R3993:4002 StateCompression <> skm_marked proj
+R3990:3990 StateCompression <> s:21 var
+R4031:4038 StateCompression <> fp2_imag proj
+R4018:4027 StateCompression <> skm_marked proj
+R4015:4015 StateCompression <> s:21 var
+R4062:4066 StateCompression <> fp2_p proj
+R4049:4058 StateCompression <> skm_marked proj
+R4046:4046 StateCompression <> s:21 var
+R4117:4121 StateCompression <> fp2_p proj
+R4104:4113 StateCompression <> skm_marked proj
+R4101:4101 StateCompression <> s:21 var
+R4152:4163 StateCompression <> skm_unmarked proj
+R4149:4149 StateCompression <> s:21 var
+prf 4179:4204 <> oracle_preserves_structure
+R4219:4231 StateCompression <> SparseKMarked rec
+binder 4215:4215 <> s:22
+R4263:4265 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4252:4261 StateCompression <> skm_qubits proj
+R4237:4246 StateCompression <> skm_oracle def
+R4248:4248 StateCompression <> s:22 var
+R4269:4278 StateCompression <> skm_qubits proj
+R4266:4266 StateCompression <> s:22 var
