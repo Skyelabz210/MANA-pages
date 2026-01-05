@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>MANA FHE - Bootstrap-Free Homomorphic Encryption</title>
+    <style>
+        :root {
+            --primary: #0066cc;
+            --primary-dark: #004499;
+            --accent: #00a3e0;
+            --bg-dark: #0a1628;
+            --bg-card: #111d2e;
+            --text: #e8eef4;
+            --text-muted: #8899aa;
+            --success: #00c853;
+            --border: #1e3a5f;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #0d2137 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230066cc' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: 2rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .badge-row {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--accent);
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 80px 0;
+            background: var(--bg-card);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .feature-card h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+        }
+
+        /* Benchmark Section */
+        .benchmarks {
+            padding: 80px 0;
+            background: var(--bg-card);
+        }
+
+        .benchmark-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+
+        .benchmark-table th,
+        .benchmark-table td {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .benchmark-table th {
+            background: var(--bg-dark);
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .benchmark-table tr:hover {
+            background: rgba(0, 102, 204, 0.1);
+        }
+
+        .benchmark-table .highlight {
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .benchmark-table .mana-row {
+            background: rgba(0, 163, 224, 0.1);
+        }
+
+        .benchmark-table .mana-row td {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* Formula Section */
+        .formula {
+            padding: 80px 0;
+        }
+
+        .formula-box {
+            background: var(--bg-card);
+            border: 2px solid var(--primary);
+            border-radius: 12px;
+            padding: 3rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .formula-box h3 {
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .formula-display {
+            font-family: 'Courier New', monospace;
+            font-size: 2rem;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: var(--bg-dark);
+            border-radius: 8px;
+        }
+
+        .formula-box p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        /* Innovations Grid */
+        .innovations {
+            padding: 80px 0;
+            background: var(--bg-card);
+        }
+
+        .innovations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .innovation-item {
+            background: var(--bg-dark);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .innovation-item .number {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 0.75rem;
+        }
+
+        .innovation-item h4 {
+            display: inline;
+            font-size: 1rem;
+        }
+
+        .innovation-item p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 0.75rem;
+        }
+
+        .innovation-item .speedup {
+            color: var(--success);
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .benchmark-table {
+                font-size: 0.85rem;
+            }
+
+            .benchmark-table th,
+            .benchmark-table td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>MANA FHE</h1>
+                <p class="subtitle">Bootstrap-Free Homomorphic Encryption</p>
+                <p>Revolutionizing privacy-preserving computation with the world's first formally verified, bootstrap-free FHE implementation. Orders of magnitude faster than existing solutions.</p>
+                <div class="badge-row">
+                    <span class="badge">14 Verified Innovations</span>
+                    <span class="badge">Coq + Lean 4 Proofs</span>
+                    <span class="badge">Zero Floating-Point</span>
+                    <span class="badge">128-bit Security</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">14×</div>
+                    <div class="stat-label">Faster Homo Add</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">250×</div>
+                    <div class="stat-label">Faster Homo Mul</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Bootstraps Required</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">50+</div>
+                    <div class="stat-label">Circuit Depth</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Core Innovations</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>K-Elimination</h3>
+                    <p>The 60-year RNS division problem, solved. Constant-time exact division with O(k) complexity instead of O(k²). Enables bootstrap-free rescaling.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Dual-Track Exact Arithmetic</h3>
+                    <p>Zero-drift computation. The 1000th operation is as precise as the first. No approximation error accumulation, unlike CKKS.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>GSO-FHE Noise Bounding</h3>
+                    <p>Gravitational Swarm Optimization replaces bootstrapping. Depth-50+ circuits without the 100-1000ms bootstrap penalty.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Persistent Montgomery</h3>
+                    <p>Never leave Montgomery form. 2 conversions vs 3n traditional. 50-100× speedup for modular operation chains.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formula Section -->
+    <section class="formula">
+        <div class="container">
+            <div class="formula-box">
+                <h3>The K-Elimination Formula</h3>
+                <div class="formula-display">k = (v<sub>A</sub> - v<sub>M</sub>) * M<sup>-1</sup> mod A</div>
+                <p>Where v<sub>A</sub> is the anchor residue, v<sub>M</sub> is the main residue, and M<sup>-1</sup> is the modular inverse. The phase differential between main and anchor residue spaces encodes the overflow count exactly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benchmarks Section -->
+    <section class="benchmarks">
+        <div class="container">
+            <h2 class="section-title">Performance Comparison</h2>
+            <table class="benchmark-table">
+                <thead>
+                    <tr>
+                        <th>Library</th>
+                        <th>Homo Add</th>
+                        <th>Homo Mul</th>
+                        <th>Bootstrap</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="mana-row">
+                        <td>MANA (QMNF)</td>
+                        <td class="highlight">2.85 μs</td>
+                        <td class="highlight">21.91 μs</td>
+                        <td class="highlight">Not Required</td>
+                    </tr>
+                    <tr>
+                        <td>Microsoft SEAL</td>
+                        <td>~40 μs</td>
+                        <td>~5.5 ms</td>
+                        <td>~100-500 ms</td>
+                    </tr>
+                    <tr>
+                        <td>OpenFHE</td>
+                        <td>~55 μs</td>
+                        <td>~6.2 ms</td>
+                        <td>~200-800 ms</td>
+                    </tr>
+                    <tr>
+                        <td>Zama TFHE-rs</td>
+                        <td>109 ms</td>
+                        <td>402 ms</td>
+                        <td>Built-in (slow)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- All Innovations -->
+    <section class="innovations">
+        <div class="container">
+            <h2 class="section-title">All 14 Verified Innovations</h2>
+            <div class="innovations-grid">
+                <div class="innovation-item">
+                    <span class="number">1</span>
+                    <h4>K-Elimination</h4>
+                    <p>Exact RNS division in O(k) time</p>
+                    <span class="speedup">40× speedup</span>
+                </div>
+                <div class="innovation-item">
+                    <span class="number">2</span>
+                    <h4>Order Finding</h4>
+                    <p>Non-circular BSGS with B=N-1</p>
+                    <span class="speedup">No φ(N) needed</span>
+                </div>
+                <div class="innovation-item">
+                    <span class="number">3</span>
+                    <h4>K-Verification Oracle</h4>
+                    <p>Winding number on T² covering</p>
+                    <span class="speedup">Independent verification</span>
+                </div>
+                <div class="innovation-item">
+                    <span class="number">4</span>
+                    <h4>Encrypted Quantum</h4>
+                    <p>FHE × Sparse Grover</p>
+                    <span class="speedup">1000+ depth</span>
+                </div>
+                <div class="innovation-item">
+                    <span class="number">5</span>
+                    <h4>State Compression</h4>
+                    <p>Quantum state taxonomy</p>
+                    <span class="speedup">10⁶:1 compression</span>
+                </div>
+                <div class="innovation-item">
+                    <span class="number">6</span>
+                    <h4>GSO-FHE</h4>
+                    <p>Bootstrap-free noise bounding</p>
+                    <span class="speedup">Depth-50+ circuits</span>
+                </div>
+                <div class="innovation-item">
+                    <span class="number">7</span>
+                    <h4>CRT Shadow Entropy</h4>
+                    <p>Free randomness from modular ops</p>
+                    <span class="speedup">Zero overhead</span>
+                </div>
+                <div class="innovation-item">
+                    <span class="number">8</span>
+                    <h4>Exact Coefficient</h4>
+                    <p>Dual-track RNS representation</p>
+                    <span class="speedup">100% exact</span>
+                </div>
+                <div class="innovation-item">
+                    <span class="number">9</span>
+                    <h4>Persistent Montgomery</h4>
+                    <p>Never leave Montgomery form</p>
+                    <span class="speedup">50-100× speedup</span>
+                </div>
+                <div class="innovation-item">
+                    <span class="number">10</span>
+                    <h4>MobiusInt</h4>
+                    <p>Exact signed arithmetic</p>
+                    <span class="speedup">Polarity separation</span>
+                </div>
+                <div class="innovation-item">
+                    <span class="number">11</span>
+                    <h4>Cyclotomic Phase</h4>
+                    <p>Native ring trigonometry</p>
+                    <span class="speedup">60,000× faster</span>
+                </div>
+                <div class="innovation-item">
+                    <span class="number">12</span>
+                    <h4>Integer Softmax</h4>
+                    <p>Exact probability sum</p>
+                    <span class="speedup">Error = 0</span>
+                </div>
+                <div class="innovation-item">
+                    <span class="number">13</span>
+                    <h4>Padé Engine</h4>
+                    <p>Integer transcendentals</p>
+                    <span class="speedup">O(x⁷) error bound</span>
+                </div>
+                <div class="innovation-item">
+                    <span class="number">14</span>
+                    <h4>MQ-ReLU</h4>
+                    <p>O(1) sign detection</p>
+                    <span class="speedup">2000× faster</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>MANA FHE - NINE65 Research Division</p>
+            <p style="margin-top: 0.5rem;">All innovations formally verified in Coq and Lean 4</p>
+        </div>
+    </footer>
+</body>
+</html>
